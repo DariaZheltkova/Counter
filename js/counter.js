@@ -1,17 +1,20 @@
-let counterBtn = document.querySelector ('#btn__plus');
-let counterText = document.querySelector ('.counter__text');
-let resetBtn = document.querySelector ('#btn__reset');
+const counterEl = document.querySelector('[data-find="counterValue"]');
+const counterBtn = document.querySelector ('#btn__plus');
+const resetBtn = document.querySelector('#resetBtn');
 
-let counter = 0;
+const COUNTER_INITIAL_VALUE = 0;
+
+let counter = COUNTER_INITIAL_VALUE;
+counterEl.innerText = counter;
+
 
 counterBtn.addEventListener('click', function() {	
 	counter = counter + 1;
-	counterText.innerText = counter;
+	counterEl.innerText = counter;
 });
 
 resetBtn.addEventListener('click', function() {
-	counter = 0;
-	counterText.innerText = counter;
+	counter = COUNTER_INITIAL_VALUE;
+	counterEl.innerText = counter;
 });
-
 
