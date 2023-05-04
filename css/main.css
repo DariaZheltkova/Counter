@@ -4,6 +4,12 @@
   box-sizing: border-box; 
 }
 
+body {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 700;
+	background-color: #fff;
+}
+
 .container {
 	max-width: 500px;
 	margin: 0 auto;
@@ -18,7 +24,7 @@
 	align-items: center;
 }
 
-.counter__text {
+.counter__value {
 	margin-bottom: 36px;
 	font-size: 32px;
 	font-weight: 700;
@@ -30,9 +36,8 @@
 	padding: 28px;
 	width: 100%;
 	display: inline-block;
-	font-family: 'Manrope', sans-serif;
+	font-family: inherit;
 	font-size: 32px;
-	font-weight: 700;
 	line-height: 43px;
 	color: #fff;
 	border-radius: 20px;
@@ -81,3 +86,4 @@
 		width: 100%;
 	}
 }
+
