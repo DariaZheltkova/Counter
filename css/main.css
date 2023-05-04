@@ -43,31 +43,26 @@ body {
 	border-radius: 20px;
 	border: 0;
 	cursor: pointer;
+	transition: opacity .2s linear;
 }
 
 .counter__plus {
-	background-color: #4191FF;
 	margin-bottom: 36px;
-	transition: background-color .2s linear;
-}
-
-.counter__btn:hover,
-.counter__btn:active,
-.counter__btn:focus {
-	outline: none;
-	background-color: #2e85ff;
+	background-color: #4191FF;
 }
 
 .counter__reset {
 	background-color: #D45366;
-	transition: background-color .2s linear;
 }
 
+.counter__plus:hover,
+.counter__plus:active,
+.counter__plus:focus, 
 .counter__reset:hover,
 .counter__reset:active,
 .counter__reset:focus {
 	outline: none;
-	background-color: #e63650;
+	opacity: .8;
 }
 
 @media (max-width: 991px) {
@@ -86,4 +81,3 @@ body {
 		width: 100%;
 	}
 }
-
